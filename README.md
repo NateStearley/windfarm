@@ -6,7 +6,7 @@
 
 #### Wind Turbine Power Generation
 
-The power output \( P \) of a wind turbine can be calculated using the formula:
+The power output ![equation](https://latex.codecogs.com/svg.image?\(P\)) of a wind turbine can be calculated using the formula:
 
 \[ P = \frac{1}{2} \rho A v^3 C_P \]
 
