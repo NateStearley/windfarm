@@ -8,7 +8,7 @@
 
 The power output ![equation](https://latex.codecogs.com/svg.image?\(P\)) of a wind turbine can be calculated using the formula:
 
-![equation](https://latex.codecogs.com/svg.image?\[P = \frac{1}{2} \rho A v^3 C_P\])
+![equation](https://latex.codecogs.com/svg.image?\[P=\frac{1}{2}\rho&space;A&space;v^3&space;C_P\])
 
 where:
 - ![equation](https://latex.codecogs.com/svg.image?\(\rho\)) is the air density (kg/m^3), which can be calculated from air pressure and temperature.
