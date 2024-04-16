@@ -5,22 +5,18 @@ import time
 
 API_KEY = "pLusKcjyQAq5ifT6GpGCLjYp0dIDEO0B3Xf4TZu4"
 EMAIL = "natestearley@gmail.com"
-BASE_URL = "https://developer.nrel.gov/api/wind-toolkit/v2/wind/wtk-download.json?"
-POINTS = [
-'1600859'
-]
+BASE_URL = "https://developer.nrel.gov/api/wind-toolkit/v2/wind/wtk-led-conus-download.json?"
+POINTS = ['1552328']
 
 def main():
     input_data = {
-        'attributes': 'power,wind_direction,wind_speed,temperature,pressure,density',
-        'interval': '5',
-        'to_utc': 'false',
-        'five_minute': 'true',
+        'attributes': 'boundary_layer_height,friction_velocity_2m,inversemoninobukhovlength_2m,latent_heat_flux,precipitation_0m,pressure_0m,pressure_100m,pressure_200m,pressure_500m,relativehumidity_2m,sensible_heat_flux,skin_temperature,temperature_1000m,temperature_100m,temperature_200m,temperature_20m,temperature_2m,temperature_300m,temperature_40m,temperature_500m,temperature_60m,temperature_80m,vertical_windspeed_120m,vertical_windspeed_200m,vertical_windspeed_20m,vertical_windspeed_40m,vertical_windspeed_500m,vertical_windspeed_80m,virtual_potential_temperature_1000m,virtual_potential_temperature_100m,virtual_potential_temperature_200m,virtual_potential_temperature_20m,virtual_potential_temperature_2m,virtual_potential_temperature_300m,virtual_potential_temperature_40m,virtual_potential_temperature_500m,virtual_potential_temperature_60m,virtual_potential_temperature_80m,winddirection_1000m,winddirection_100m,winddirection_10m,winddirection_120m,winddirection_140m,winddirection_160m,winddirection_180m,winddirection_200m,winddirection_20m,winddirection_250m,winddirection_300m,winddirection_40m,winddirection_500m,winddirection_60m,winddirection_80m,windspeed_1000m,windspeed_100m,windspeed_10m,windspeed_120m,windspeed_140m,windspeed_160m,windspeed_180m,windspeed_200m,windspeed_20m,windspeed_250m,windspeed_300m,windspeed_40m,windspeed_500m,windspeed_60m,windspeed_80m',
+        'interval': '60',
         
         'api_key': API_KEY,
         'email': EMAIL,
     }
-    for name in ['2007','2008','2009','2010','2011','2012']:
+    for name in ['2019','2020']:
         print(f"Processing name: {name}")
         for id, location_ids in enumerate(POINTS):
             input_data['names'] = [name]
