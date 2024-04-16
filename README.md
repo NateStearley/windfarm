@@ -11,9 +11,9 @@ The power output ![equation](https://latex.codecogs.com/svg.image?\(P\)) of a wi
 \[ P = \frac{1}{2} \rho A v^3 C_P \]
 
 where:
-- \( \rho \) is the air density (kg/m^3), which can be calculated from air pressure and temperature.
-- \( A \) is the swept area of the turbine blades (m^2).
-- \( v \) is the wind speed at the height of the turbine hub (m/s).
-- \( C_P \) is the power coefficient, which depends on the turbine design and the operational conditions.
+- ![equation](https://latex.codecogs.com/svg.image?\(\rho\)) is the air density (kg/m^3), which can be calculated from air pressure and temperature.
+- ![equation](https://latex.codecogs.com/svg.image?\(A\)) is the swept area of the turbine blades (m^2).
+- ![equation](https://latex.codecogs.com/svg.image?\(v\)) is the wind speed at the height of the turbine hub (m/s).
+- ![equation](https://latex.codecogs.com/svg.image?\(C_P\)) is the power coefficient, which depends on the turbine design and the operational conditions.
 
 ##
