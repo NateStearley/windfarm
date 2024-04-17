@@ -6,7 +6,7 @@ def prepare_data() -> pd.DataFrame:
     '''
     Processes and prepares data if prepared data doesn't already exist
     '''
-    if os.files.exists('data_management/data/processed_data.csv'):
+    if os.path.exists('data_management/data/processed_data.csv'):
         print('Loaded data from memory')
         return pd.read_csv('data_management/data/processed_data.csv')
     else:
@@ -32,3 +32,9 @@ def prepare_data() -> pd.DataFrame:
         print('Data saved to memory')
         df_selected.to_csv('data_management/data/processed_data.csv', index=False)
         return df_selected
+    
+def main():
+    prepare_data()
+
+if __name__ == '__main__':
+    main()
